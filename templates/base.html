@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{#TODO: 使用`django-bootstrap3` 来添加样式#}
+<body>
+<p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+    <a href="{% url 'learning_logs:topics' %}">Topics</a> -
+    {% if user.is_authenticated %}
+        Hello, {{ user.username }}.
+        <a href="{% url 'users:logout' %}">log out</a>
+    {% else %}
+        <a href="{% url 'users:login' %}">log in</a>
+    {% endif %}
+</p>
+
+{% block content %}
+{% endblock content %}
+</body>
+</html>
