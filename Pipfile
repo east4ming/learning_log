@@ -10,7 +10,6 @@ django = "*"
 django-bootstrap3 = "*"
 django-heroku = "*"
 gunicorn = "*"
-fcntl = "*"
 
 [requires]
 python_version = "3.7"
