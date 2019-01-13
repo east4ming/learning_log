@@ -281,7 +281,37 @@ pipenv install django-bootstrap3
 
 #### 使用 Bootstrap 来设置"学习笔记"的样式
 
+> 注意是**bootstrap3**而不是**bootstrap4**
+
+[Bootstrap3 getting-started](https://v3.bootcss.com/getting-started/#template)
+
+#### 修改 `base.html`
+
+[bootstrap3 navbar](https://v3.bootcss.com/components/#navbar)
+
+1. 定义HTML头部 - 加载bootstrap3
+2. 定义导航栏 - Navbar
+3. 定义页面的主要部分 - 简易
+
+#### 使用 `jumbotron` 设置主页的样式 - 超大屏幕
+
+> 一个大框, 凸显内容. 通常用于呈现项目中的简要概述.
+
+修改 `index.html`
+
+#### 设置登录页面的样式
+
+改进**表单** - 修改 `login.html`
+
+#### 设置 `new_topic` 页面的样式
+
+#### 设置 `topics` 页面的样式
+
+#### 设置 `topic` 页面中条目的样式
+
+> 使用 *Bootstrap 面板(panel)* 来突出每个条目. 面板是一个带预定义样式的div.
+
 ### 部署"学习笔记"
 
-
+[Getting Started on Heroku with Python](https://devcenter.heroku.com/articles/getting-started-with-python)
 
