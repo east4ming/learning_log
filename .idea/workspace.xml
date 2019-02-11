@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e2ca576-e71c-454b-ae61-dc9d0ec64281" name="Default Changelist" comment="20190211:添加OpenShift相关脚本,变量,模板.">
+    <list default="true" id="1e2ca576-e71c-454b-ae61-dc9d0ec64281" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json" beforeDir="false" afterPath="$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +23,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="548" column="19" selection-start-line="548" selection-start-column="19" selection-end-line="548" selection-end-column="19" />
+            <state relative-caret-position="233">
+              <caret line="525" column="6" lean-forward="true" selection-start-line="525" selection-start-column="6" selection-end-line="525" selection-end-column="6" />
               <folding>
-                <element signature="n#!!block;n#annotations#0;n#!!block;n#metadata#0;n#!!top" />
                 <element signature="n#!!block;n#labels#0;n#!!top" />
                 <element signature="e#1068#1364#0" />
                 <element signature="e#1370#1937#0" />
@@ -285,11 +284,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549887614497</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="20190211:修改模板文件">
+      <created>1549894798663</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1549894798663</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71305000" />
+    <option name="totallyTimeSpent" value="71579000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -315,7 +321,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32847533" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.33295584" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.33295584" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.38565022" />
@@ -354,7 +360,8 @@
     <MESSAGE value="2019021:DJANGO SECRET 改为通过os.getenv获取" />
     <MESSAGE value="20190211:django settings.py 修改DATABASES, 增加内部IP." />
     <MESSAGE value="20190211:添加OpenShift相关脚本,变量,模板." />
-    <option name="LAST_COMMIT_MESSAGE" value="20190211:添加OpenShift相关脚本,变量,模板." />
+    <MESSAGE value="20190211:修改模板文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190211:修改模板文件" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -650,10 +657,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="548" column="19" selection-start-line="548" selection-start-column="19" selection-end-line="548" selection-end-column="19" />
+        <state relative-caret-position="233">
+          <caret line="525" column="6" lean-forward="true" selection-start-line="525" selection-start-column="6" selection-end-line="525" selection-end-column="6" />
           <folding>
-            <element signature="n#!!block;n#annotations#0;n#!!block;n#metadata#0;n#!!top" />
             <element signature="n#!!block;n#labels#0;n#!!top" />
             <element signature="e#1068#1364#0" />
             <element signature="e#1370#1937#0" />

@@ -112,7 +112,7 @@
               },
               {
                 "name": "ENABLE_PIPENV",
-                "value": true
+                "value": "true"
               }
             ]
           }
@@ -546,7 +546,7 @@
       "name": "ENABLE_PIPENV",
       "displayName": "Enable pipenv",
       "description": "set true to enable pipenv",
-      "value": true
+      "value": "true"
     }
   ]
 }
