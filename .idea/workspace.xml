@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e2ca576-e71c-454b-ae61-dc9d0ec64281" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/learning_logs/database.py" afterDir="false" />
+    <list default="true" id="1e2ca576-e71c-454b-ae61-dc9d0ec64281" name="Default Changelist" comment="20190211:添加OpenShift相关脚本,变量,模板.">
+      <change afterPath="$PROJECT_DIR$/conf/reload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openshift/scripts/run-in-container.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +23,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learning_logs/database.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learning_logs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="243">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/openshift/scripts/run-in-container.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -37,6 +60,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -54,7 +78,11 @@
       <find>bs-example-navbar-collapse-1</find>
       <find>from</find>
       <find>form</find>
+      <find>django-psql-persistent</find>
     </findStrings>
+    <replaceStrings>
+      <replace>ll-django-psql-persistent</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,11 +128,16 @@
         <option value="$PROJECT_DIR$/learning_log/database.py" />
         <option value="$PROJECT_DIR$/learning_log/settings.py" />
         <option value="$PROJECT_DIR$/learning_logs/database.py" />
+        <option value="$PROJECT_DIR$/conf/reload.py" />
+        <option value="$PROJECT_DIR$/openshift/scripts/run-in-container.sh" />
+        <option value="$PROJECT_DIR$/openshift/templates/package.json" />
+        <option value="$PROJECT_DIR$/openshift/templates/django.json" />
+        <option value="$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -124,7 +157,13 @@
             <path>
               <item name="learning_log" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning_log" type="462c0819:PsiDirectoryNode" />
-              <item name="learning_logs" type="462c0819:PsiDirectoryNode" />
+              <item name="openshift" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning_log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning_log" type="462c0819:PsiDirectoryNode" />
+              <item name="openshift" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,9 +176,11 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New 临时文件" value="JSON" />
     <property name="last_opened_file_path" value="C:/Program Files/ConEmu/ConEmu64.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="template.copyright.formatting" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -151,12 +192,13 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WorkSpace\learning_log\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Cui Kaidong\PycharmProjects\learning_log\templates" />
       <recent name="C:\Users\Cui Kaidong\PycharmProjects\learning_log\templates\learning_logs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\learning_log\openshift\templates" />
+      <recent name="E:\WorkSpace\learning_log\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66524000" />
+    <option name="totallyTimeSpent" value="68892000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -277,7 +319,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" weight="0.26754385" />
@@ -291,7 +333,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32847533" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.33295584" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.38565022" />
@@ -311,6 +353,16 @@
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
@@ -319,17 +371,12 @@
     <MESSAGE value="20190210: 创建新的OpenShift分支,用于在OpenShift上部署该应用" />
     <MESSAGE value="2019021:DJANGO SECRET 改为通过os.getenv获取" />
     <MESSAGE value="20190211:django settings.py 修改DATABASES, 增加内部IP." />
-    <option name="LAST_COMMIT_MESSAGE" value="20190211:django settings.py 修改DATABASES, 增加内部IP." />
+    <MESSAGE value="20190211:添加OpenShift相关脚本,变量,模板." />
+    <option name="LAST_COMMIT_MESSAGE" value="20190211:添加OpenShift相关脚本,变量,模板." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/base_user.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/apps.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/admin.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/views/generic/edit.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/core/handlers/__init__.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/core/handlers/base.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/__init__.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/views.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/views/generic/base.py" />
@@ -345,16 +392,6 @@
     </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/http/response.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/apps/registry.py" />
-    <entry file="file://$PROJECT_DIR$/learning_logs/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2225">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/shortcuts.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pipenv/vendor/shellingham/nt.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -583,8 +620,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learning_logs/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="324">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/reload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openshift/templates/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openshift/templates/django.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8289">
+          <caret line="307" selection-start-line="307" selection-end-line="307" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning_logs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openshift/scripts/run-in-container.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
         </state>
       </provider>
     </entry>
