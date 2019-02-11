@@ -497,7 +497,7 @@
       "name": "DATABASE_SERVICE_NAME",
       "displayName": "Database Service Name",
       "required": true,
-      "value": "llpostgresql"
+      "value": "postgresql"
     },
     {
       "name": "DATABASE_ENGINE",

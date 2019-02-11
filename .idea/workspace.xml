@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="203" column="38" selection-start-line="203" selection-start-column="38" selection-end-line="203" selection-end-column="38" />
+            <state relative-caret-position="167">
+              <caret line="499" column="16" selection-start-line="499" selection-start-column="16" selection-end-line="499" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -304,11 +304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549898209898</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="20190211:修改模板文件">
+      <created>1549898462904</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1549898462904</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73512000" />
+    <option name="totallyTimeSpent" value="73663000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -670,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="203" column="38" selection-start-line="203" selection-start-column="38" selection-end-line="203" selection-end-column="38" />
+        <state relative-caret-position="167">
+          <caret line="499" column="16" selection-start-line="499" selection-start-column="16" selection-end-line="499" selection-end-column="16" />
         </state>
       </provider>
     </entry>
