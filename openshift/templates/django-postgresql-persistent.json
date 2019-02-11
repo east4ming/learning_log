@@ -193,7 +193,7 @@
                   }
                 ],
                 "readinessProbe": {
-                  "timeoutSeconds": 3,
+                  "timeoutSeconds": 30,
                   "initialDelaySeconds": 3,
                   "httpGet": {
                     "path": "/",
@@ -201,7 +201,7 @@
                   }
                 },
                 "livenessProbe": {
-                  "timeoutSeconds": 3,
+                  "timeoutSeconds": 30,
                   "initialDelaySeconds": 30,
                   "httpGet": {
                     "path": "/",
