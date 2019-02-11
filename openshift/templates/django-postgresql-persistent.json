@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "ll-django-psql-persistent",
+    "name": "django-psql-persistent",
     "annotations": {
       "openshift.io/display-name": "Learning Log",
       "description": "An example Django application (Learning Log) with a PostgreSQL database. For more information about this , see https://github.com/east4ming/learning_log/blob/openshift/README.md.",
@@ -15,8 +15,8 @@
   },
   "message": "The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.",
   "labels": {
-    "template": "ll-django-psql-persistent",
-    "app": "ll-django-psql-persistent"
+    "template": "django-psql-persistent",
+    "app": "django-psql-persistent"
   },
   "objects": [
     {
@@ -159,7 +159,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "ll-django-psql-persistent"
+                "django-psql-persistent"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -185,7 +185,7 @@
           "spec": {
             "containers": [
               {
-                "name": "ll-django-psql-persistent",
+                "name": "django-psql-persistent",
                 "image": " ",
                 "ports": [
                   {
@@ -294,8 +294,8 @@
         "ports": [
           {
             "name": "postgresql",
-            "port": 6432,
-            "targetPort": 6432
+            "port": 5432,
+            "targetPort": 5432
           }
         ],
         "selector": {
@@ -362,7 +362,7 @@
                 "image": " ",
                 "ports": [
                   {
-                    "containerPort": 6432
+                    "containerPort": 5432
                   }
                 ],
                 "env": [
@@ -411,7 +411,7 @@
                   "timeoutSeconds": 1,
                   "initialDelaySeconds": 30,
                   "tcpSocket": {
-                    "port": 6432
+                    "port": 5432
                   }
                 },
                 "resources": {
@@ -432,7 +432,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "ll-django-psql-persistent"
+      "value": "django-psql-persistent"
     },
     {
       "name": "NAMESPACE",
