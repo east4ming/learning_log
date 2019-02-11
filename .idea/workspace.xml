@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e2ca576-e71c-454b-ae61-dc9d0ec64281" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json" beforeDir="false" afterPath="$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="167">
               <caret line="499" column="16" selection-start-line="499" selection-start-column="16" selection-end-line="499" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learning_log/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#311#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +69,7 @@
       <find>django-psql-persistent</find>
       <find>true</find>
       <find>ll-django-psql-persistent</find>
+      <find>llp</find>
     </findStrings>
     <replaceStrings>
       <replace>ll-django-psql-persistent</replace>
@@ -105,13 +118,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/learning_log/database.py" />
-        <option value="$PROJECT_DIR$/learning_log/settings.py" />
         <option value="$PROJECT_DIR$/learning_logs/database.py" />
         <option value="$PROJECT_DIR$/conf/reload.py" />
         <option value="$PROJECT_DIR$/openshift/scripts/run-in-container.sh" />
         <option value="$PROJECT_DIR$/openshift/templates/package.json" />
         <option value="$PROJECT_DIR$/openshift/templates/django.json" />
         <option value="$PROJECT_DIR$/openshift/templates/django-postgresql-persistent.json" />
+        <option value="$PROJECT_DIR$/learning_log/settings.py" />
       </list>
     </option>
   </component>
@@ -137,6 +150,11 @@
               <item name="learning_log" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning_log" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learning_log" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learning_log" type="462c0819:PsiDirectoryNode" />
+              <item name="learning_log" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549898462904</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="20190211:修改模板文件">
+      <created>1549898609691</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1549898609691</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73663000" />
+    <option name="totallyTimeSpent" value="74425000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -330,12 +355,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.09711846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.09711846" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.35731608" />
       <window_info id="Favorites" order="2" sideWeight="0.5026455" side_tool="true" weight="0.35731608" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.32623318" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.32623318" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -614,16 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learning_log/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="118" column="36" lean-forward="true" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#311#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learning_logs/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -679,6 +694,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="499" column="16" selection-start-line="499" selection-start-column="16" selection-end-line="499" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning_log/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#311#1" />
+          </folding>
         </state>
       </provider>
     </entry>
