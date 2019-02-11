@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e2ca576-e71c-454b-ae61-dc9d0ec64281" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/learning_log/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/settings.py" afterDir="false" />
     </list>
@@ -24,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learning_log/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="78" column="10" lean-forward="true" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+            <state relative-caret-position="669">
+              <caret line="132" column="28" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
               <folding>
                 <element signature="e#0#311#1" />
               </folding>
@@ -38,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -100,6 +101,7 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/learning_log/database.py" />
         <option value="$PROJECT_DIR$/learning_log/settings.py" />
       </list>
     </option>
@@ -141,7 +143,7 @@
     <property name="last_opened_file_path" value="C:/Program Files/ConEmu/ConEmu64.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="template.copyright.formatting" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -225,7 +227,7 @@
       <workItem from="1547470842102" duration="36000" />
       <workItem from="1547471619610" duration="378000" />
       <workItem from="1549786164002" duration="2502000" />
-      <workItem from="1549881474444" duration="663000" />
+      <workItem from="1549881474444" duration="2256000" />
     </task>
     <task id="LOCAL-00001" summary="20190113: 完成设置&quot;学习笔记&quot;的样式">
       <created>1547387920184</created>
@@ -248,11 +250,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549788209668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2019021:DJANGO SECRET 改为通过os.getenv获取">
+      <created>1549882216510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1549882216510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64303000" />
+    <option name="totallyTimeSpent" value="65896000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -265,8 +274,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.26754385" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" weight="0.26754385" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.35731608" />
       <window_info id="Favorites" order="2" sideWeight="0.5026455" side_tool="true" weight="0.35731608" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -303,12 +313,12 @@
     <MESSAGE value="20190113: 完成设置&quot;学习笔记&quot;的样式" />
     <MESSAGE value="20190210: 加入.idea文件夹和更多细节的README" />
     <MESSAGE value="20190210: 创建新的OpenShift分支,用于在OpenShift上部署该应用" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190210: 创建新的OpenShift分支,用于在OpenShift上部署该应用" />
+    <MESSAGE value="2019021:DJANGO SECRET 改为通过os.getenv获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019021:DJANGO SECRET 改为通过os.getenv获取" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/templates/registration/password_reset_subject.txt" />
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/models.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/forms.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/learning_log-44DxJ6Oh/Lib/site-packages/django/contrib/auth/base_user.py" />
@@ -545,10 +555,20 @@
     <entry file="file://$PROJECT_DIR$/learning_log/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/learning_log/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learning_log/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="78" column="10" lean-forward="true" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+        <state relative-caret-position="669">
+          <caret line="132" column="28" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
           <folding>
             <element signature="e#0#311#1" />
           </folding>
