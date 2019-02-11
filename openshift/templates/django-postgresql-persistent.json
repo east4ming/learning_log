@@ -103,12 +103,16 @@
             "from": {
               "kind": "ImageStreamTag",
               "namespace": "${NAMESPACE}",
-              "name": "python:3.5"
+              "name": "python:3.6"
             },
             "env": [
               {
                 "name": "PIP_INDEX_URL",
                 "value": "${PIP_INDEX_URL}"
+              },
+              {
+                "name": "ENABLE_PIPENV",
+                "value": true
               }
             ]
           }
@@ -290,8 +294,8 @@
         "ports": [
           {
             "name": "postgresql",
-            "port": 5432,
-            "targetPort": 5432
+            "port": 6432,
+            "targetPort": 6432
           }
         ],
         "selector": {
@@ -358,7 +362,7 @@
                 "image": " ",
                 "ports": [
                   {
-                    "containerPort": 5432
+                    "containerPort": 6432
                   }
                 ],
                 "env": [
@@ -407,7 +411,7 @@
                   "timeoutSeconds": 1,
                   "initialDelaySeconds": 30,
                   "tcpSocket": {
-                    "port": 5432
+                    "port": 6432
                   }
                 },
                 "resources": {
@@ -468,7 +472,8 @@
     {
       "name": "SOURCE_REPOSITORY_REF",
       "displayName": "Git Reference",
-      "description": "Set this to a branch name, tag or other ref of your repository if you are not using the default branch."
+      "description": "Set this to a branch name, tag or other ref of your repository if you are not using the default branch.",
+      "value": "openshift"
     },
     {
       "name": "CONTEXT_DIR",
@@ -492,7 +497,7 @@
       "name": "DATABASE_SERVICE_NAME",
       "displayName": "Database Service Name",
       "required": true,
-      "value": "postgresql"
+      "value": "llpostgresql"
     },
     {
       "name": "DATABASE_ENGINE",
@@ -536,6 +541,12 @@
       "displayName": "Custom PyPi Index URL",
       "description": "The custom PyPi index URL",
       "value": "https://mirrors.aliyun.com/pypi/simple/"
+    },
+    {
+      "name": "ENABLE_PIPENV",
+      "displayName": "Enable pipenv",
+      "description": "set true to enable pipenv",
+      "value": true
     }
   ]
 }
